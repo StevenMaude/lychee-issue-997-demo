@@ -20,5 +20,6 @@ jobs:
         with:
           args: "--exclude-all-private --exclude-mail --exclude-path ./layouts --include-verbatim --max-concurrency 32 --require-https --verbose --no-progress './**/*.md' './**/*.html'"
           fail: true
+          lycheeVersion: 0.10.3
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
